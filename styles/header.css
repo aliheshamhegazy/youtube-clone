@@ -1,0 +1,127 @@
+  .upper-bar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 57px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    border-bottom-color: rgb(222, 222, 222);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  .search {
+    display: flex;
+    flex: 1;
+    margin-left:60px;
+    max-width: 732px;
+    min-width: 0;
+  }
+  .search-bar {
+    font-family: roboto,arial;
+    font-size: 16px;
+    display: flex;
+    flex: 1;
+    height: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    min-width: 0;
+    padding-left: 12px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  }
+  .search-button {
+    width: 60px;
+    height: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+    margin-left: -1;
+    border-radius: 0px 20px 20px 0px;
+    align-items: center;
+    margin-right: 8px;
+  }
+  .search-bar::placeholder {
+    font-family: roboto, arial;
+    font-size: 17px;
+  }
+  .search-button-and-bar {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    min-width: 0;
+    margin-left: 10px;
+  }
+  .search-img {
+    align-items: center;
+    width: 27px;
+  }
+  .voice-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: rgb(204, 204, 204);
+    background-color: rgb(246, 246, 246);
+  }
+  .voice-img {
+    align-items: center;
+    width: 25px;
+    cursor: pointer;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  .youtube-logo {
+    height: 20px;
+    cursor: pointer;
+  }
+  .hamburger {
+    height: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    width: 180px;
+  }
+  .apps {
+    height: 24px;
+    cursor: pointer;
+  }
+  .upload {
+    height: 24px;
+    cursor: pointer;
+  }
+  .notifications {
+    height: 24px;
+    cursor: pointer;
+  }
+  .noti-container {
+    position: relative;
+  }
+  .number {
+    position: absolute;
+    top: -1px;
+    right: -4px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-size: 12px;
+    padding-top: 1px;
+    padding-left: 5.5px;
+    padding-bottom: 1px;
+    padding-right: 5.5px;
+    border-radius: 9px;
+  }
+  .my-channel {
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+  }
