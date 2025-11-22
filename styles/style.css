@@ -1,19 +1,11 @@
 @media(max-width:1000px) {
 .grid-videos {
-    display: grid;
-    min-width: 172px;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
-    row-gap: 10px;
   }
 }
 @media(max-width:700px) {
 .grid-videos {
-    display: grid;
-    min-width: 172px;
     grid-template-columns: 1fr;
-    column-gap: 5px;
-    row-gap: 10px;
   }
 }
 .grid-style {
