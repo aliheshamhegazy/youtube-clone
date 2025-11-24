@@ -1,82 +1,6 @@
 
   body {
-  font-family: roboto, arial;
-  padding-top: 10%;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(images/simple-website-bg-img.jpg);
-}
-header {
-  display: flex;
-  gap: 56.2%;
-  align-items: center;
-  background-color: rgb(27, 26, 26);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 9%;
-}
-.right-section {
-  display: flex;
-  align-items: center;
-  gap: 10%;
-  cursor: pointer;
-  transition: 0.3s
-}
-.bar {
-  font-size: 17px;
-  color: white;
-}
-.bar:hover {
-  transform: scale(1.1);
-  text-decoration: underline;
-}
-.left-section {
-  cursor: pointer;
-  font-size: 19px;
-  color: white;
-  font-weight: 600;
-  margin-left: 1%;
-}
-.left-section:hover {
-  text-decoration: underline;
-}
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -1%;
-  width: 80%;
-  text-align: center;
-}
-.paragraph {
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 160%;
-  color: white;
-}
-.Learn {
-  background-color: transparent;
-  color: white;
-  padding: 1% 2% 1% 2%;
-  border: white 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 1.5%;
-  font-size: medium;
-}
-.subscribe {
-  background-color: white;
-  color: black;
-  padding: 1.09% 2.9% 1.09% 2.9%;
-  border: none;
-  font-size: medium;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 1.5%;
-}
+  font-family: roboto, arial;}
 
 /* --- أكواد الـ Grid الأصلية --- */
 .grid-style {
@@ -88,7 +12,6 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 12px;
-  background-color: transparent;
   transition: border-radius 0.3s, background-color 0.3s;
 }
 .video-preview:hover {
@@ -163,79 +86,53 @@ header {
 .video-info {
   margin-top: 7px;
 }
-
-/* ---------------------------------------------------- */
-/* قواعد التجاوب (@media Queries) */
-/* ---------------------------------------------------- */
-
-/* الأجهزة اللوحية والهواتف العريضة */
-@media screen and (max-width: 768px) {
-  header {
-    height: 60px;
-    gap: 15%;
-    padding: 0 5%;
+@media (max-width: 420px) {
+  .grid-style {
+    width: 300px;
+    margin-left: -49px;
   }
-  .right-section {
-    gap: 5px;
+  .voice-button {
+    display: none;
   }
-  .bar {
-    font-size: 14px;
+  .search-button {
+    width: 40px;
   }
-  .left-section {
-    font-size: 16px;
+  .search-button-and-bar {
+    width: 100px;
+    margin-left: -3px;
   }
-  .center {
-    width: 90%;
-    margin-top: 100px;
+  .upper-bar {
+    gap: 100px;
   }
-  .paragraph {
-    font-size: 30px;
-    line-height: 140%;
+  .youtube-logo {
+    width: 100px;
+    margin-left: -10px;
   }
-  .Learn,
-  .subscribe {
-    padding: 3% 6%;
-    font-size: 14px;
-    display: block;
-    margin: 15px auto;
-    width: 80%;
+  .humburger {
+    width: 40px;
+    margin-right: 70px;
   }
-  .grid-videos {
-    grid-template-columns: 1fr 1fr;
+  .right {
+    margin-left: -90px;
+    gap: 10px;
+    width: 90px;
+    margin-right: 40px;
   }
-}
-
-/* الهواتف الضيقة (مثل iPhone 12) */
-@media screen and (max-width: 450px) {
-  header {
-    height: 50px;
-    gap: 5%;
-    padding: 0 10px;
-  }
-  .right-section {
-    gap: 3px;
-  }
-  .bar {
-    font-size: 12px;
-  }
-  .center {
-    width: 95%;
-  }
-  .paragraph {
-    font-size: 24px;
-  }
-  .Learn,
-  .subscribe {
-    width: 90%;
-    margin: 10px auto;
-    padding: 10px 0;
-    font-size: 14px;
+  .left {
+    width: 10px;
+    margin-left: -20px;
   }
   .grid-videos {
     grid-template-columns: 1fr;
+    width: 350px;
   }
   .side-bar {
     display: none;
+  }
+}
+@media (max-width: 750px) {
+  .grid-videos {
+    grid-template-columns: 1fr;
   }
 }
 
