@@ -1,3 +1,83 @@
+body {
+  font-family: roboto, arial;
+  padding-top: 10%;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/simple-website-bg-img.jpg);
+}
+header {
+  display: flex;
+  gap: 56.2%;
+  align-items: center;
+  background-color: rgb(27, 26, 26);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 9%;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  cursor: pointer;
+  transition: 0.3s
+}
+.bar {
+  font-size: 17px;
+  color: white;
+}
+.bar:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+.left-section {
+  cursor: pointer;
+  font-size: 19px;
+  color: white;
+  font-weight: 600;
+  margin-left: 1%;
+}
+.left-section:hover {
+  text-decoration: underline;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1%;
+  width: 80%;
+  text-align: center;
+}
+.paragraph {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 160%;
+  color: white;
+}
+.Learn {
+  background-color: transparent;
+  color: white;
+  padding: 1% 2% 1% 2%;
+  border: white 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1.5%;
+  font-size: medium;
+}
+.subscribe {
+  background-color: white;
+  color: black;
+  padding: 1.09% 2.9% 1.09% 2.9%;
+  border: none;
+  font-size: medium;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1.5%;
+}
+
+/* --- أكواد الـ Grid الأصلية --- */
 .grid-style {
   overflow: visible;
 }
@@ -8,9 +88,8 @@
   padding-right: 15px;
   border-radius: 12px;
   background-color: transparent;
-  transition: border-radius 0.3s,background-color 0.3s;
+  transition: border-radius 0.3s, background-color 0.3s;
 }
-
 .video-preview:hover {
   background-color: lightgray;
 }
@@ -19,129 +98,20 @@
   margin: 0;
 }
 .grid-videos {
-    display: grid;
-    min-width: 172px;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    row-gap: 10px;
+  display: grid;
+  min-width: 172px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 10px;
 }
-  .thumbnails {
-   transition: tranform, border-radius 0.15s;
-   width: 100%; 
-   cursor: pointer;
-   border-radius: 13px;
-  }
-  .container {
-    position: relative;
-  }
-  .time {
-    font-family: roboto, arial;
-    font-size: 12px;
-    position: absolute;
-    bottom: 10px;
-    right: 7px;
-    padding: 2px 3px 2px 3px;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    z-index: 50;
-  }
-  .video-text {
-    display: inline-block;
-    font-weight:500;
-    font-size: 14px;
-    cursor: pointer;
-  }
-   .channel-name{
-    color: rgb(96, 96, 96);
-    display: block;
-    margin-top: 6px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: color 0.3s;
-   }
-   .channel-name:hover {
-    color: black;
-    font-weight: 500;
-   }
-   .video-state {
-    margin-top: 6px;
-    font-size: 12px;
-    color: rgb(96, 96, 96);
-    display: block;
-   }
-  .channels {
-    width:37px;
-    border-radius: 50%;
-    margin-top: 7px;
-    cursor: pointer;
-  }
-  .video-details {
-    display: grid;
-    grid-template-columns: 60px 1fr;
-  }
-  .video-info {
-    margin-top: 7px;
-  }
-  @media (max-width:420px) {
-    .grid-style {
-      width: 300px;
-      margin-left: -49px;
-    }
-    .voice-button {
-      display: none;
-    }
-    .search-button {
-      width: 40px;
-    }
-    .search-button-and-bar {
-      width: 100px;
-      margin-left: -3px;
-    }
-    .upper-bar {
-      gap: 100px;
-    }
-    .youtube-logo {
-      width: 100px;
-      margin-left: -10px;
-    }
-    .humburger{
-      width: 40px;
-      margin-right: 70px;
-    }
-    .right {
-      margin-left: -90px;
-      gap: 10px;
-      width: 90px;
-      margin-right: 40px;
-    }
-    .left {
-      width: 10px;
-      margin-left: -20px;
-    }
-    .grid-videos {
-      grid-template-columns: 1fr;
-      width: 350px;
-    }
-    .side-bar {
-      display: none;
-    }
-  }
-@media (max-width: 750px) {
-  .grid-videos {
-    grid-template-columns: 1fr ;
-  }
+.thumbnails {
+  transition: transform, border-radius 0.15s;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 13px;
 }
-
-@media (min-width: 751px) and (max-width: 999px) {
-  .grid-videos {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.container {
+  position: relative;
 }
-
-
-@media (min-width: 1000px) {
-  .grid-videos {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
+.time {
+  font-family: roboto, arial}
