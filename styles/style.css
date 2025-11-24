@@ -2,7 +2,7 @@
   body {
   font-family: roboto, arial;}
 
-/* --- أكواد الـ Grid الأصلية --- */
+
 .grid-style {
   overflow: visible;
 }
@@ -136,7 +136,6 @@
   }
 }
 
-/* الشاشات الكبيرة جداً */
 @media (min-width: 1000px) {
   .grid-videos {
     grid-template-columns: 1fr 1fr 1fr 1fr;
