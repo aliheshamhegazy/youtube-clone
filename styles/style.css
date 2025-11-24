@@ -8,6 +8,14 @@
     grid-template-columns: 1fr;
   }
 }
+@media(max-width:420px) {
+    .grid-videos{
+    grid-template-colums:1fr
+    }
+    .side-bar{
+        display:none
+    }
+}
 .grid-style {
   overflow: visible;
 }
